@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flex box5 in CSS</title>
+    <link rel="stylesheet" href="../media/image/background1.jpg">
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 22px;
+            color: aliceblue;
+        }
+
+        .parent-container{
+            border: 3px solid black;
+            height: 400px;
+            display: flex;
+            gap: 5px;
+        }
+
+        .child{
+            height: 200px;
+            /* width: 200px; */
+            background: pink;
+            /* flex-grow: 1; */
+            flex-shrink: 0;
+            flex-basis: 200px;
+        }
+
+        .child1{
+            /* flex-grow: 1; */
+        }
+
+        .child2{
+            /* flex-shrink: 1; */
+        }
+    </style>
+</head>
+<body>
+    <div class="parent-container">
+        <div class="child child1">1</div>
+        <div class="child child2">2</div>
+    </div>
+</body>
+</html>

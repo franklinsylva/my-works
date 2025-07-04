@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive web design</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 15px;
+            color: #fff;
+            text-align: center;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        .child{
+            height: fit-content;
+            width: 400px;
+            background: dodgerblue;
+            padding: 10px;
+
+        }
+
+        .parent-container{
+            display: flex;
+            /* flex-wrap: wrap; */
+            justify-content: center;
+            gap: 10px;
+        }
+
+        /* media query */
+        @media (max-width: 800px){
+            .parent-container{
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .child{
+                width: 95%;
+
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="parent-container">
+        <div class="child">
+            1
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quam quidem dolor ea deserunt fugit doloremque laudantium illo, sit, pariatur facilis voluptate quae reprehenderit blanditiis sed officiis quos dignissimos. Modi cumque hic laboriosam similique doloremque, magnam animi beatae consequatur voluptatum tempore ipsa cum impedit asperiores totam alias vero vel esse.
+        </div>
+        <div class="child">
+            2
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quam quidem dolor ea deserunt fugit doloremque laudantium illo, sit, pariatur facilis voluptate quae reprehenderit blanditiis sed officiis quos dignissimos. Modi cumque hic laboriosam similique doloremque, magnam animi beatae consequatur voluptatum tempore ipsa cum impedit asperiores totam alias vero vel esse.
+        </div>
+        <div class="child">
+            3
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quam quidem dolor ea deserunt fugit doloremque laudantium illo, sit, pariatur facilis voluptate quae reprehenderit blanditiis sed officiis quos dignissimos. Modi cumque hic laboriosam similique doloremque, magnam animi beatae consequatur voluptatum tempore ipsa cum impedit asperiores totam alias vero vel esse.
+        </div>
+        <div class="child">
+            4
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quam quidem dolor ea deserunt fugit doloremque laudantium illo, sit, pariatur facilis voluptate quae reprehenderit blanditiis sed officiis quos dignissimos. Modi cumque hic laboriosam similique doloremque, magnam animi beatae consequatur voluptatum tempore ipsa cum impedit asperiores totam alias vero vel esse.
+        </div>
+        <div class="child">
+            5
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quam quidem dolor ea deserunt fugit doloremque laudantium illo, sit, pariatur facilis voluptate quae reprehenderit blanditiis sed officiis quos dignissimos. Modi cumque hic laboriosam similique doloremque, magnam animi beatae consequatur voluptatum tempore ipsa cum impedit asperiores totam alias vero vel esse.
+        </div>
+        <div class="child">
+            6
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis quam quidem dolor ea deserunt fugit doloremque laudantium illo, sit, pariatur facilis voluptate quae reprehenderit blanditiis sed officiis quos dignissimos. Modi cumque hic laboriosam similique doloremque, magnam animi beatae consequatur voluptatum tempore ipsa cum impedit asperiores totam alias vero vel esse.
+        </div>
+    </div>
+</body>
+</html>

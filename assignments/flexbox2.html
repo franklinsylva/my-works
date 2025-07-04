@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flexbox2 in CSS</title>
+    <style>
+        *{
+            font-family: sans-serif;
+            color: aliceblue;
+            font-size: 25px;
+            text-align: center;
+        }
+        .child{
+            width: 200px;
+            height: 200px;
+            background: green;
+        }
+        .parent-container{
+            height: 1000px;
+            border: solid black 3px;
+            gap: 10px;
+            flex-direction: column;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent-container">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+    </div>
+</body>
+</html>

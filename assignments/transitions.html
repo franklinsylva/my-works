@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Transition in CSS</title>
+
+    <style>
+        .box{
+            height: 200px;
+            width: 200px;
+            background: black;
+            position: relative;
+            /* transition-duration: 3000ms;
+            transition-property:  all;
+            transition-timing-function: linear(-0.39 -26.44%, 1.22 99.68%) ;
+            transition-delay: 5s; */
+        }
+
+        .box:hover{
+            background: orange;
+            left: 30px;
+            border-radius: 50%;
+            transition: 3000ms all ease 1s;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

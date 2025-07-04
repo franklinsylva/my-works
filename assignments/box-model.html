@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Box-Model In CSS</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        div{
+            width: 200px;
+            height: 200px;
+            background: thistle;
+            margin: 50px 0 0 50px;
+            padding: 30px;
+        }
+
+        .box{
+            box-sizing: content-box;
+        }
+
+        .box2{
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        Lorem ipsum dol.
+    </div>
+
+    <div class="box2">
+        Lorem, ipsum dolor.
+
+    </div>
+</body>
+</html>

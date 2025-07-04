@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Transform in CSS</title>
+
+    <style>
+        div{
+            width: 200px;
+            height: 200px;
+            margin: 30px auto;
+        }
+
+        .box1{
+            background: indigo;
+            transition: 4000ms all ease;
+        }
+
+        .box1:hover{
+            transform: rotate(360deg);
+            background: black;
+            border-radius: 50px;
+        }
+
+        .box2{
+            background: indianred;
+            transition: 4000ms all ease;
+        }
+
+        .box2:hover{
+            transform: scaleX(.5);
+        }
+
+        .box3{
+            background:green ;
+            transition: 4000ms all ease;
+        }
+
+        .box3:hover{
+            transform: translateX(200px);
+        }
+
+        .box4{
+            background: blue;
+            transition:  4000ms all ease;
+        }
+
+        .box4:hover{
+            transform: skew(45deg);
+        }
+    </style>
+</head>
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+</body>
+</html>

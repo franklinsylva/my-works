@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>flexbox3 in CSS</title>
+    <style>
+        *{
+            font-family: sans-serif;
+            color: aliceblue;
+            text-align: center;
+            font-size: 25px;
+        }
+
+        .child{
+            width: 300px;
+            height: 200px;
+            background: green;
+        }
+
+        .parent-container{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        height: 500px;
+        gap: 5px;
+        border: 3px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent-container">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+        <div class="child">5</div>
+        <div class="child">6</div>
+        <div class="child">7</div>
+        <div class="child">8</div>
+        <div class="child">9</div>
+        
+    </div>
+</body>
+</html>

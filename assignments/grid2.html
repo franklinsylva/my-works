@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>grid in CSS</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            color: aliceblue;
+            font-size: 22px;
+            text-align: center;
+        }
+
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .parent-container{
+            border: 3px solid black;
+            width: 600px;
+            display: grid;
+            /* grid-template-columns: 1fr 1fr 1fr  ; */
+            grid-template-columns: repeat(3, 1fr);
+            /* grid-template-rows: ; */
+            gap: 10px;
+        }
+
+        .child{
+            background: teal;
+            padding: 30px;
+        }
+
+        .child:nth-child(even){
+            background: gray;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent-container">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+        <div class="child">4</div>
+        <div class="child">5</div>
+        <div class="child">6</div>
+    </div>
+</body>
+</html>

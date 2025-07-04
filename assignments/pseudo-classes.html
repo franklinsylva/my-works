@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo classes in CSS</title>
+    <style>
+        p:active{
+            background: black;
+            color: white;
+
+        }
+
+        p:focus{
+            background: red;
+        }
+
+        input:focus{
+            outline: none;
+            border: 1px solid red;
+        }
+    </style>
+</head>
+<body>
+    <p class="paragraph">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto eius ipsam repellendus architecto reprehenderit dolor distinctio quia ducimus vel labore? Modi doloribus similique voluptas exercitationem tenetur. Cupiditate esse rem reiciendis nobis reprehenderit aperiam quas, veritatis itaque doloremque in aspernatur nulla eligendi quisquam iste repellat dolorum illum libero veniam quae debitis!
+    </p>
+
+    <form>
+        <input type="text">
+    </form>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Animation in CSS</title>
+    <style>
+
+
+        .box{
+            width: 200px;
+            height: 200px;
+            background: rgb(240, 84, 240);
+            /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+            animation-name: slide;
+            animation-duration: 4000ms;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+            border-radius: 50px;
+        }
+
+        @keyframes slide{
+            /* from{
+                transform: translateX(300px);
+            }
+            to{
+                transform: translateX(0);
+            } */
+             0%{
+                transform: translateX(0);
+             }
+
+             10%{
+                transform: translateX(100px);
+                background: red;
+                transform: translateY(100px);
+             }
+
+             25%{
+                transform: translateX(200px);
+             }
+
+             50%{
+                transform: translateX(300px);
+             }
+
+             75%{
+                transform: translateX(0);
+             }
+
+             100%{
+                transform: translateX(0);
+             }
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>

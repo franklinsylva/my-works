@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo element CSS</title>
+
+    <style>
+        .paragraph::first-letter{
+            color:red;
+            font-size: 100px;
+            text-transform: lowercase;
+        }
+
+        .paragraph::first-line{
+            font-size: 30px;
+            text-transform: uppercase;
+            text-decoration: underline;
+        }
+
+        .paragraph::selection{
+            background: green;
+            color: aliceblue;
+        }
+    </style>
+</head>
+<body>
+    <p class="paragraph">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, vitae? Dolorum, quos reiciendis incidunt dolores fugit, quam deleniti dolore, dicta qui fuga dignissimos? Tempore similique minus ducimus repellat doloribus officiis perferendis quisquam reprehenderit qui sed architecto pariatur dolorum recusandae commodi ab adipisci, dolore id earum error debitis vero? Expedita, eveniet?
+    </p>
+</body>
+</html>

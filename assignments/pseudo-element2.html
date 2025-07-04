@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>pseudo element in CSS</title>
+    <style>
+        .curve{
+            width: 500px;
+            height: 400px;
+            background: dodgerblue;
+        }
+
+        .curve::before{
+            content: "";
+            width: 500px;
+            background:black;
+            height: 50px;
+            position: absolute;
+            z-index: 1;
+            border-bottom-right-radius: 200px;
+            border-bottom-left-radius: 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="curve"></div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+.btn{
+    text-decoration: none;
+    font-family: sans-serif;
+    background: brown;
+    color: aliceblue;
+    border-radius: 20px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+a.btn:hover{
+    background-color: whitesmoke;
+    color: brown;
+    border: 2px solid brown;
+}

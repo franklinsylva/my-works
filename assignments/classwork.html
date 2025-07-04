@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>classwork</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-size: 22px;
+            color: black;
+            text-align: center;
+            font-family: sans-serif;
+
+        }
+
+        .parent{
+            border: 3px solid  black;
+            width: 30%;
+            height: 450px;
+            margin: 70px auto;
+            margin-top: 90px;
+        }
+        img{
+            
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-top: -50px;
+        }
+
+        .child{
+          /* text-align: left;
+          display: block;
+          border: 2px solid black; */
+          display: flex;
+          flex-direction: column;
+          width: 100%;
+          align-items: flex-start;
+          justify-content: center;
+          font-size: 20px;
+          margin-left: 10px;
+          padding: 50px;
+          display: flex;
+        }
+
+        .btn{
+            border-radius: 50px;
+            padding: 8px 13px;
+            border: none;
+            margin-bottom: -17px;
+        }
+        .button{
+            display: block;
+            /* margin-top: 40px;
+            margin-left: auto;
+            margin-right: auto; */
+            color: orange;
+            align-items: center;
+        }
+
+        /* .img-bg{
+            background: white;
+            width: 190px;
+            height: 190px;
+            border-radius: 50%;
+            margin: auto;
+            position: relative;
+            top: -40px;
+            margin-top: -25px;
+        } */
+    </style>
+</head>
+<body>
+    
+
+    <div class="parent">
+        <img src="../media/image/me.png">
+        <div class="child">
+            <p>Name: frankyy <p>
+                <br>
+            </p>Gender: M <p>
+                <br>
+            </p> Age: 19 <p>
+                <br>
+            </p>Occupation: student</p>
+
+            <button class="btn"> view details </button>
+        </div>
+    </div>
+</body>
+</html>

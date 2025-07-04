@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flex in CSS</title>
+
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            color: aliceblue;
+            font-size: 22px;
+        }
+        .parent-container{
+            border: 3px solid black;
+            display: flex;
+            height: 400px;
+        }
+
+        .child{
+            width: 200px;
+            height: 200px;
+            background-color: orange;
+            /* align-content: center; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .child1{
+            align-self: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="parent-container">
+        <div class="child child1" >1</div>
+        <div class="child child2" >2</div>
+    </div>
+</body>
+</html>
