@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document Object Model</title>
+
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .circle{
+      background: red;
+      color: black;
+    }
+
+    .box{
+      padding: 30px;
+      font-family: verdana;
+      background: dodgerblue;
+      color: white;
+      border-radius: 3rem;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="circle">
+    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deleniti quod cum dignissimos. Eos nam adipisci repellendus, rerum placeat odio voluptate aspernatur maiores dolorem magni dolore officiis cumque hic mollitia quos.
+  </div>
+
+  <script>
+    const div = document.querySelector('div');
+
+    div.onclick = function(){
+      div.classList.add('box');
+    }
+  </script>
+</body>
+</html>

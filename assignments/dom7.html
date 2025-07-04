@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document object Model</title>
+
+    <style>
+        .box{
+            width: 300px;
+            height: 200px;
+            background: seagreen;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, illo!
+    </div>
+
+    <script>
+        const box = document.querySelector('.box');
+
+        // function act(){
+        //     box.classList.remove('box');
+        // }
+
+        box.addEventListener('mouseenter',()=>{
+            box.classList.toggle('box');
+        });
+    </script>
+</body>
+</html>

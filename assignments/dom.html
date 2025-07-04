@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document Object Model</title>
+
+  <style>
+    body div{
+
+    }
+  </style>
+</head>
+<body>
+  <div class="box">1</div>
+  <div class="box">2</div>
+  <div class="box">3</div>
+
+  <script>
+    const groupDiv = document.querySelectorAll('.box');
+
+    console.log(groupDiv);
+    
+    for(let i = 0; i < groupDiv.length; i++){
+      
+      console.log(groupDiv[i]);
+      if(groupDiv[i].textContent == 2)
+        groupDiv[i].textContent = 25;
+    }
+  </script>
+</body>
+</html>

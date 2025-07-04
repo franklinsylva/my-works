@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>fun in javascript</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        label{
+            text-align: center;
+            font-size: 100px;
+            display: block;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            margin-bottom: 20px;
+        }
+
+        .button{
+            display:flex ;
+            justify-content: space-around;
+        }
+
+        .btn{
+            padding: 10px 20px;
+            font-size: 20px;
+            background: green;
+            color: aliceblue;
+            border-radius: 7px;
+        }
+    </style>
+</head>
+<body>
+    <label id="text">0</label>
+    <div class="button">
+        <button class="btn" id="increaseBtn">increase</button>
+        <button class="btn" id="resetBtn">reset</button>
+        <button class="btn" id="decreaseBtn">decrease</button>
+    </div>
+
+    <script>
+        let label  =  document.getElementById('text');
+        const increaseBtn = document.getElementById('increaseBtn');
+        const resetBtn = document.getElementById('resetBtn');
+        const decreaseBtn = document.getElementById('decreaseBtn');
+
+
+        let updatedNumber = 0
+        increaseBtn.onclick  =  function(){
+            updatedNumber++;
+            label.textContent = updatedNumber;
+        }
+
+        resetBtn.onclick = function(){
+            updatedNumber = 0;
+            label.textContent = updatedNumber;
+        }
+
+        decreaseBtn.onclick = function(){
+            updatedNumber--;
+            label.textContent = updatedNumber;
+        }
+    </script>
+</body>
+</html>

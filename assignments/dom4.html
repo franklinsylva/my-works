@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document Object Model</title>
+</head>
+<body>
+  <div class="empty"></div>
+  <button class="btn">Click</button>
+  <script>
+    const div = document.querySelector('.empty');
+    const button = document.querySelector('.btn');
+
+    button.onclick = function(){
+      div.style.height = '200px';
+      div.style.width = '200px';
+      div.style.backgroundColor = 'red';
+      div.textContent = 'This is a red square';
+      div.style.color = 'white';
+    }
+  </script>
+</body>
+</html>

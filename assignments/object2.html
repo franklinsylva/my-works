@@ -1,0 +1,31 @@
+<script>
+
+  const phone = {
+    brand: "samsung",
+    model: "S10",
+    storage: "256gb",
+    processor: "SnapDragon",
+    color: "TitaniumBlack",
+    price: 300000,
+    year: "2019",
+    isAvailable: true
+  }
+
+  const phone2 = {
+    brand: "Apple",
+    model: "Iphone Xr",
+    storage: "128gb",
+    processor: "A10",
+    color: "red",
+    price: 250000,
+    year: "2019",
+    isAvailable: true
+  }
+
+  if(phone.price > phone2.price && phone.storage >= "128gb"){
+    console.log(`Phone Purchased`);
+  }
+  else{
+    console.log(`Didn't meet requirements`);
+  }
+</script>

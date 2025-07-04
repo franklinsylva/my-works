@@ -1,0 +1,38 @@
+<script>
+
+
+    // function nameOfTheFunction(parameter){
+    //     body of function;
+
+    //     return;
+    // }
+
+
+    function greet(){
+        console.log('good morning my dear');
+    }
+    greet();
+
+    function greetName(name){
+        console.log(`good morning ${name}`);
+    }
+
+    greetName("franklin");
+
+
+    function greetByTime( name, hour){
+        if(hour >= 0 && hour < 12)
+        console.log(`good morning ${name}`);
+
+        else if(hour >= 12 && hour < 16)
+        console.log(`good afternoon ${name}`);
+
+        else if(hour >= 16 && hour < 24)
+        console.log(`good evening ${name}`);
+
+        else
+        console.log(`${name}, you are not from this time zone`);
+    }
+
+    greetByTime("franklin",16);
+</script>

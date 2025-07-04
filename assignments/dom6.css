@@ -1,0 +1,44 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: verdana;
+}
+
+.navigation{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+ul.right{
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+
+.right a{
+  text-decoration: none;
+  color: #777;
+  transition: 400ms all ease;
+}
+
+.right a:hover{
+  color: black;
+}
+
+#hamburger{
+  display: none;
+}
+
+@media  (max-width: 768px){
+  ul.right{
+    display: none;
+  }
+
+  #hamburger{
+    display: block;
+    
+  }
+}
